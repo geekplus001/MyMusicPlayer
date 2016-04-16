@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <ImageView
+        android:layout_width="58dp"
+        android:layout_height="58dp"
+        android:id="@+id/imageView1_icon"
+        android:src="@mipmap/logo_music_more"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1_title"
+            android:text="TextView"/>
+        <TextView
+            android:id="@+id/textView2_singer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#a6a8a8"
+            android:text="TextView"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView3_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:text="TextView"/>
+</LinearLayout>

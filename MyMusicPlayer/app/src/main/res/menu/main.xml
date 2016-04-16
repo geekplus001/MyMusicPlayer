@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+       <item
+           android:id="@+id/mylovesong"
+           android:showAsAction="ifRoom"
+           android:orderInCategory="10"
+           android:title="@string/mylovesong"/>
+       <item
+           android:id="@+id/lately"
+           android:orderInCategory="20"
+           android:showAsAction="ifRoom"
+           android:title="@string/lately"/>
+
+        <item
+            android:id="@+id/exit"
+            android:orderInCategory="30"
+            android:title="退出"
+            android:showAsAction="ifRoom"/>
+
+</menu>

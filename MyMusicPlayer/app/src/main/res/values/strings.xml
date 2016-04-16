@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">私人定制</string>
+    <string name="part1">我的音乐</string>
+    <string name="part2">网络推荐</string>
+    <string name="lovehint">已收藏到我喜欢</string>
+    <string name="unlovehint">已取消收藏</string>
+    <string name="mylovesong">我喜欢的</string>
+    <string name="lately">最近播放</string>
+    <string name="order_play">顺序播放</string>
+    <string name="randomp_lay">随机播放</string>
+    <string name="single_play">单曲循环</string>
+
+</resources>
