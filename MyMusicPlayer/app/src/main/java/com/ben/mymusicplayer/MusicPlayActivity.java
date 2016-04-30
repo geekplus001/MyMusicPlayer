@@ -249,8 +249,7 @@ public class MusicPlayActivity extends BaseActivity implements View.OnClickListe
 //                    case DownloadUtils.FAILED_LRC:
 //                        Toast.makeText(musicPlayActivity,"歌词下载失败",Toast.LENGTH_SHORT).show();
 //                        break;
-                    default:
-                        break;
+
                 }
             }
         }
@@ -261,12 +260,12 @@ public class MusicPlayActivity extends BaseActivity implements View.OnClickListe
     public void publish(int progress) {
 
 //        textView_nowTime.setText(MediaUtils.formatTime(progress));
-//        Message msg = myHandler.obtainMessage(UPDATE_TIME);
-//        msg.arg1 = progress;
-//        myHandler.sendMessage(msg);
-        myHandler.obtainMessage(UPDATE_TIME, progress).sendToTarget();
+        Message msg = myHandler.obtainMessage(UPDATE_TIME);
+        msg.arg1 = progress;
+        myHandler.sendMessage(msg);
+//        myHandler.obtainMessage(UPDATE_TIME, progress).sendToTarget();
         seekBar.setProgress(progress);
-        myHandler.obtainMessage(UPDATE_LRC,progress).sendToTarget();
+//        myHandler.obtainMessage(UPDATE_LRC,progress).sendToTarget();
     }
 
     @Override
